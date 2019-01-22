@@ -18,6 +18,18 @@ public class Livro {
 	}
 
 	@Override
+	public boolean equals(Object obj) {
+
+		Livro livro = (Livro) obj;
+
+		if (this.nome != livro.nome && this.autor != livro.autor) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	@Override
 	public String toString() {
 		return "Livro [nome=" + nome + ", descricao=" + descricao + ", preco=" + preco + ", isbn=" + isbn
 				+ ", numeroDePaginas=" + numeroDePaginas + ", autor=" + autor + "]";

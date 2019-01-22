@@ -17,6 +17,16 @@ public class Livro {
 		this.autor = autor;
 	}
 
+	public double desconto(int valor) {
+		if (valor > 0 && valor < 50) {
+
+			return ((this.preco * valor) / 100);
+		} else {
+
+			return 0;
+		}
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 

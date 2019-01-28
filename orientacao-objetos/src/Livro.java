@@ -8,13 +8,18 @@ public class Livro {
 	private int numeroDePaginas;
 	private Autor autor;
 
-	public Livro(String nome, String descricao, double preco, String isbn, int numeroDePaginas, Autor autor) {
-		this.nome = nome;
-		this.descricao = descricao;
-		this.preco = preco;
-		this.isbn = isbn;
-		this.numeroDePaginas = numeroDePaginas;
-		this.autor = autor;
+	public Livro(String nome, double preco, String isbn, Autor autor) throws Throwable {
+		if ((nome != null && nome.length() > 5) && preco > 0 && (isbn != null && isbn.length() == 14)
+				&& autor != null) {
+			this.nome = nome;
+			this.preco = preco;
+			this.isbn = isbn;
+			this.autor = autor;
+			System.out.println("Livro Criado com sucesso.");
+		} else {
+			throw new Throwable("Preencha os dados corretamente.");
+		}
+
 	}
 
 	public double desconto(int valor) {

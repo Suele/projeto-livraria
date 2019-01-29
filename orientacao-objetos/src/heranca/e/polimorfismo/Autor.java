@@ -12,7 +12,7 @@ public class Autor {
 
 	@Override
 	public String toString() {
-		return "Autor [nome=" + nome + ", editora=" + editora + "]";
+		return "Autor >>> nome: " + nome + "\n" + editora;
 	}
 
 }

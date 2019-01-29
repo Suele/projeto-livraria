@@ -1,4 +1,5 @@
 package heranca.e.polimorfismo;
+
 public class Livro {
 
 	private String nome;
@@ -15,7 +16,6 @@ public class Livro {
 			this.preco = preco;
 			this.isbn = isbn;
 			this.autor = autor;
-			System.out.println("Livro Criado com sucesso.");
 		} else {
 			throw new Throwable("Preencha os dados corretamente.");
 		}
@@ -55,8 +55,8 @@ public class Livro {
 
 	@Override
 	public String toString() {
-		return "Livro [nome=" + nome + ", descricao=" + descricao + ", preco=" + preco + ", isbn=" + isbn
-				+ ", numeroDePaginas=" + numeroDePaginas + ", autor=" + autor + "]";
+		return "\nLivro >>> nome: " + nome + ", descricao: " + descricao + ", preco: " + preco + ", isbn: " + isbn
+				+ ", numeroDePaginas: " + numeroDePaginas + "\n" + autor + "\n";
 	}
 
 }

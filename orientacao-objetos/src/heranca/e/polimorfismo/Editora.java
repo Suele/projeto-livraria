@@ -12,7 +12,7 @@ public class Editora {
 
 	@Override
 	public String toString() {
-		return "Editora [nome=" + nome + ", endereco=" + endereco + "]";
+		return "Editora >>> nome: " + nome + ", endereco: " + endereco;
 	}
 
 }

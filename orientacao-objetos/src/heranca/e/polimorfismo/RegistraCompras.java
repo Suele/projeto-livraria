@@ -7,7 +7,7 @@ public class RegistraCompras {
 
 		Autor autor = new Autor("Paulo Silveira", editora);
 
-		Ebook ebook = new Ebook("Orientação de Objetos", 100.00, "123.456.789.00", autor);
+		Ebook ebook = new Ebook("Orientação a Objetos", 100.00, "123.456.789.00", autor);
 
 		LivroImpresso livroImpresso = new LivroImpresso("Orientação a Objetos", 100, "123.456.789.00", autor);
 
@@ -15,5 +15,7 @@ public class RegistraCompras {
 
 		carrinhoDeCompras.adiciona(ebook);
 		carrinhoDeCompras.adiciona(livroImpresso);
+
+		System.out.println("Total no Carrinho de Compras: " + carrinhoDeCompras.getTotal());
 	}
 }

@@ -22,13 +22,22 @@ public class Livro {
 
 	}
 
-	public double desconto(int valor) {
-		if (valor > 0 && valor < 50) {
+	public double getPreco() {
+		return preco;
+	}
 
-			return ((this.preco * valor) / 100);
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	public boolean aplicaDescontoDe(int valorDoDesconto) {
+		if (valorDoDesconto > 0 && valorDoDesconto < 50) {
+
+			this.preco = ((this.preco * valorDoDesconto) / 100);
+			return true;
 		} else {
 
-			return 0;
+			return false;
 		}
 	}
 

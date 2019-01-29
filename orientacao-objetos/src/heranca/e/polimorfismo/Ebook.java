@@ -1,3 +1,4 @@
+package heranca.e.polimorfismo;
 
 public class Ebook extends Livro {
 
@@ -6,9 +7,9 @@ public class Ebook extends Livro {
 	}
 
 	@Override
-	public boolean aplicaDescontoDe(int valorDoDesconto) {
+	public boolean aplicaDescontoDe(double valorDoDesconto) {
 
-		if (valorDoDesconto > 0 && valorDoDesconto <= 15) {
+		if (valorDoDesconto > 0 && valorDoDesconto <= 0.15) {
 
 			double valorGeradoDoDesconto = this.getPreco() * valorDoDesconto;
 
@@ -16,7 +17,7 @@ public class Ebook extends Livro {
 
 			return true;
 		} else {
-			
+
 			return false;
 		}
 	}

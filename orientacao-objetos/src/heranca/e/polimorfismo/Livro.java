@@ -1,4 +1,4 @@
-
+package heranca.e.polimorfismo;
 public class Livro {
 
 	private String nome;
@@ -30,10 +30,10 @@ public class Livro {
 		this.preco = preco;
 	}
 
-	public boolean aplicaDescontoDe(int valorDoDesconto) {
-		if (valorDoDesconto > 0 && valorDoDesconto < 50) {
+	public boolean aplicaDescontoDe(double valorDoDesconto) {
+		if (valorDoDesconto > 0 && valorDoDesconto < 0.50) {
 
-			this.preco = ((this.preco * valorDoDesconto) / 100);
+			this.preco -= (this.preco * valorDoDesconto);
 			return true;
 		} else {
 

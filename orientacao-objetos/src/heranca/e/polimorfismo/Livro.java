@@ -30,6 +30,46 @@ public class Livro {
 		this.preco = preco;
 	}
 
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public int getNumeroDePaginas() {
+		return numeroDePaginas;
+	}
+
+	public void setNumeroDePaginas(int numeroDePaginas) {
+		this.numeroDePaginas = numeroDePaginas;
+	}
+
+	public Autor getAutor() {
+		return autor;
+	}
+
+	public void setAutor(Autor autor) {
+		this.autor = autor;
+	}
+
 	public boolean aplicaDescontoDe(double valorDoDesconto) {
 		if (valorDoDesconto > 0 && valorDoDesconto < 0.50) {
 

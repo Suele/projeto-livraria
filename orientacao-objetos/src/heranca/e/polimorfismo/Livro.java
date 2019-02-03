@@ -71,14 +71,7 @@ public abstract class Livro {
 	}
 
 	public boolean aplicaDescontoDe(double valorDoDesconto) {
-		if (valorDoDesconto > 0 && valorDoDesconto < 0.50) {
-
-			this.preco -= (this.preco * valorDoDesconto);
-			return true;
-		} else {
-
-			return false;
-		}
+		return false;
 	}
 
 	@Override

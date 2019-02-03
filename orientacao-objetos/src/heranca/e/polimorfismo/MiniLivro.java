@@ -7,4 +7,9 @@ public class MiniLivro extends Livro {
 		super(nome, preco, isbn, autor);
 	}
 
+	@Override
+	public boolean aplicaDescontoDe(double valorDoDesconto) {
+		return false;
+	}
+
 }

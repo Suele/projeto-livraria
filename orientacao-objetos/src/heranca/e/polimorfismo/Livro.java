@@ -70,9 +70,7 @@ public abstract class Livro {
 		this.autor = autor;
 	}
 
-	public boolean aplicaDescontoDe(double valorDoDesconto) {
-		return false;
-	}
+	public abstract boolean aplicaDescontoDe(double valorDoDesconto);
 
 	@Override
 	public boolean equals(Object obj) {
